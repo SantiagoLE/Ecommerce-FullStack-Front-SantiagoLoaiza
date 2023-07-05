@@ -1,0 +1,63 @@
+:root {
+    --height_header: 70px;
+    --backgroun_red: #f85555;
+}
+
+
+.header {
+    width: 100%;
+    height: var(--height_header);
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: fixed;
+    background-color: green;
+    z-index: 20;
+}
+
+.header_title {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: var(--backgroun_red);
+}
+
+.header_title:hover{
+    color: var(--backgroun_red);
+}
+
+.header_icon {
+    font-size: 2rem;
+    transition: color 200ms ease, transform 200ms ease;
+}
+
+.header_icon:hover {
+    color: var(--backgroun_red);
+    transform: scale(1.1);
+}
+
+.header_navbar {
+    position: fixed;
+    display: grid;
+    align-items: center;
+    background-color: white;
+    min-width: 50%;
+    height: 100vh;
+    max-width: 200px;
+    text-align: center;
+    top: var(--height_header);
+    right: -300%;
+}
+
+.header_navbar-active {
+    right: 0;
+    transition: right 500ms ease;
+
+}
+
+.header_list {
+    display: grid;
+    gap: 1rem;
+}

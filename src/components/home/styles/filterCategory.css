@@ -1,0 +1,49 @@
+.filtercategory{
+margin-top: 3rem;
+}
+
+.filtercategory_title-container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+cursor: pointer;
+}
+
+.filtercategory_title{
+font-size: 1.4rem;
+}
+
+.filtercategory_open{
+font-size: 1.4rem;
+}
+
+.filtercategory_open:hover{
+    color: var(--backgroun_red);
+}
+
+.filtercategory_hr{
+    border: 1px solid rgba(128, 128, 128, 0.303);
+margin-bottom: 1rem;
+}
+
+.filtercategory_list{
+    height: 200px;
+overflow: hidden;
+transition: height 500ms ease;
+
+}
+
+.filtercategory_list-closed{
+height: 0;
+  
+}
+
+.filtercategory_list-item{
+padding-left: 0.5rem;
+font-size: 1.2rem;
+cursor: pointer;
+}
+
+.filtercategory_list-item:hover{
+    color: var(--backgroun_red);
+}

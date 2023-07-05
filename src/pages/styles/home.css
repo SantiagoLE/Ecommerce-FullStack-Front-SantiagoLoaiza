@@ -1,0 +1,90 @@
+.home {
+    padding: 1rem;
+    display: grid;
+}
+
+.home_searchandfilter-container {
+    width: 100%;
+    max-width: 700px;
+    display: grid;
+    margin-top: 2rem;
+    place-self: center;
+}
+
+.home_input {
+    width: 100%;
+    height: 40px;
+    padding-left: 1rem;
+    padding-bottom: 0.2rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.home_icon-filter {
+    font-size: 1.5rem;
+    color: gray;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    transition: color 200ms ease;
+}
+
+.home_icon-filter:hover {
+    color: var(--backgroun_red);
+}
+
+.home_icon-label{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.filters_container {
+    position: fixed;
+    background-color: white;
+    min-width: 100%;
+    height: 100vh;
+    top: var(--height_header);
+    left: 0;
+    z-index: 20;
+    transition: left 500ms ease;
+    padding:0  1rem;
+}
+
+.filters_container-close {
+    left: -300%;
+}
+
+.filter_title{
+margin: 1rem 0;
+font-size: 2rem;
+}
+
+.filter_icon-close {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    font-size: 1.5rem;
+}
+
+.filter_icon-close:hover{
+    color: red;
+}
+
+
+.cardProducts-cotain {
+    width: 100%;
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+
+
+
+
+
+
+

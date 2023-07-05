@@ -1,0 +1,62 @@
+.prodcart{
+    display: grid;
+    grid-template-columns: 6em 1fr 2em;
+    gap: 1em;
+    align-items: center;
+    width: 100%;
+    max-width: 25em;
+
+}
+
+.prodcart_title{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.prodcart_delete{
+font-size: 1.2rem;
+width: 2em;
+aspect-ratio: 1;
+border-radius: 50%;
+background-color: red;
+color: white;
+transition: transform 200ms ease;
+}
+
+.prodcart_delete:hover{
+    transform: scale(1.1);
+    filter: brightness(1.15);
+}
+
+.prodcart_footer{
+    grid-column: span 3;
+    justify-self: end ;
+    display: flex;
+    align-items: center;
+    gap:  3em;
+}
+
+.prodcart_quantity{
+    border: 1px solid gray;
+    padding: 0.2em 1em;
+}
+
+.prodcart_subtotal{
+    display: flex;
+    align-items: end;
+    gap: 1em;
+}
+
+.prodcart_subtotal-label{
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.prodcart_subtotal-value{
+    font-weight: 700;
+}
+
+.prodcart_subtotal-value::before{
+    content: "$";
+    padding-right: 0.3em;
+}
