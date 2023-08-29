@@ -22,7 +22,6 @@ const CardProduct = ({ product }) => {
     addProductToCart(data)
   }
 
-  console.log(product)
 
   return (
     <article onClick={handleSelectProduct} className='cardProduct'>

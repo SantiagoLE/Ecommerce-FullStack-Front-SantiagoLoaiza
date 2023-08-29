@@ -9,6 +9,7 @@ import { setFiltersCloseSlice } from '../store/slices/filtersClose.slice'
 const Home = () => {
     const { productsGlobal } = useSelector(state => state)
 
+
     const [inputValue, setInputValue] = useState("")
 
     const [fromTo, setFromTo] = useState({
@@ -21,7 +22,7 @@ const Home = () => {
     const handleChangeInput = () => {
         setInputValue(input.current.value.toLowerCase().trim())
     }
-console.log(fromTo)
+   
     const productFilter = productsGlobal
         ?.filter(prod => prod.title.toLowerCase().trim().includes(inputValue))
         .filter(prod => {
@@ -42,8 +43,8 @@ console.log(fromTo)
             }
         })
 
-       const {filtersClose} = useSelector(state => state)
-      const dispatch = useDispatch()
+    const { filtersClose } = useSelector(state => state)
+    const dispatch = useDispatch()
 
     const handleFilterClose = () => {
         dispatch(setFiltersCloseSlice(!filtersClose))
@@ -52,7 +53,7 @@ console.log(fromTo)
     return (
         <div className='home'>
             <div className='home_searchandfilter-container'>
-            <input className='home_input' ref={input} onChange={handleChangeInput} type="text" placeholder="what are you looking for" />
+                <input className='home_input' ref={input} onChange={handleChangeInput} type="text" placeholder="what are you looking for" />
 
                 <i className='home_icon-filter bx bx-filter-alt' onClick={handleFilterClose}><span className='home_icon-label'>Filters</span></i>
 

@@ -20,7 +20,7 @@ const Header = () => {
     return () => {
       document.removeEventListener('click', handleClickOutsideMenu);
     }
-  }, [document]);
+  }, [document,navbarIsActive]);
 
 
 

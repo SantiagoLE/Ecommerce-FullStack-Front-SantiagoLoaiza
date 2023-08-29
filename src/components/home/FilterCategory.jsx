@@ -21,7 +21,7 @@ const FilterCategory = () => {
     }, [])
 
     const handleClickCategories = id => {
-        const url = `${URL_BASE}/products?categoryId=${id}`
+        const url = `${URL_BASE}/products?category=${id}`
         dispatch(getAllProductsThunk(url))
         dispatch(setFiltersCloseSlice(true))
     }
